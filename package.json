@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My Portfolio Website",
   "scripts": {
-    "start": "http-server ./"
+    "start": "http-server ./ -o Portfolio.html"
   },
   "dependencies": {},
   "devDependencies": {
