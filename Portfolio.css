@@ -217,6 +217,7 @@ section {
   justify-content: space-between;
   width: 410px;
   height: 45px;
+  padding-right: 0.8rem;
 }
 
 .btn-box .btn {
@@ -1010,6 +1011,11 @@ footer a i {
 
   .about {
     flex-direction: column-reverse;
+  }
+
+  .about > * {
+    max-width: 100%;
+    min-width: 0;
   }
 
   .skill-main {
