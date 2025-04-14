@@ -148,3 +148,26 @@ document.getElementById("contactForm").addEventListener("submit", function (even
       alert("There was an error sending the message.");
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navList");
+  const menuIcon = document.getElementById("menu-icon");
+
+  // Function to calculate and apply padding-top
+  function adjustBodyPadding() {
+    const navbarHeight = navbar.getBoundingClientRect().height; // Get the visible height of the navbar
+    document.body.style.paddingTop = `${navbarHeight}px`; // Set padding-top dynamically
+  }
+
+  // Initial adjustment
+  adjustBodyPadding();
+
+  // Optional: Recalculate on window resize
+  window.addEventListener("resize", adjustBodyPadding);
+
+  // Handle menu icon click (if needed for responsive design)
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active"); // Add or remove a class for toggling menu visibility
+    adjustBodyPadding(); // Recalculate padding if the navbar height changes
+  });
+});

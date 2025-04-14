@@ -40,6 +40,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  margin: 0;
 }
 
 html {
@@ -130,7 +131,7 @@ section {
   padding: 10px 10%;
 }
 
-/* Hero section */
+/* Hero section ---------------------------*/
 
 .home {
   min-height: 100vh;
@@ -139,8 +140,9 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  grid-gap: 4em;
-  padding-top: 130px;
+  grid-gap: 0 4em;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .home-content {
@@ -151,6 +153,7 @@ section {
   font-size: var(--big-font);
   font-weight: 700;
   margin-bottom: 1.5rem;
+  margin-top: 0;
   font-size: 60px;
 }
 
@@ -228,7 +231,7 @@ section {
   justify-content: space-between;
   /* width: 410px; */
   height: 45px;
-  /* padding-right: 0.2rem; */
+  padding-right: 0.2rem;
   gap: 2rem;
   width: 100%;
   max-width: 410px;
@@ -384,9 +387,10 @@ section {
 }
 
 .about .img-about img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .about-content span {
@@ -1050,10 +1054,14 @@ footer a i {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   html {
     font-size: 80%;
   }
+
+  /* body {
+    padding-top: 60px;
+  } */
 
   footer p {
     font-size: 0.6rem;
