@@ -130,6 +130,8 @@ section {
   padding: 10px 10%;
 }
 
+/* Hero section */
+
 .home {
   min-height: 100vh;
   height: 100%;
@@ -202,8 +204,11 @@ section {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
-  margin: 1rem 0 2rem;
+  /* width: 400px; */
+  /* margin: 1rem 0 2rem; */
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem auto 2rem;
 }
 
 .info-box h5 {
@@ -221,9 +226,12 @@ section {
 .btn-box {
   display: flex;
   justify-content: space-between;
-  width: 410px;
+  /* width: 410px; */
   height: 45px;
-  padding-right: 0.8rem;
+  /* padding-right: 0.2rem; */
+  gap: 2rem;
+  width: 100%;
+  max-width: 410px;
 }
 
 .btn-box .btn {
@@ -959,9 +967,10 @@ footer a i {
     --h2-font: 3rem;
   }
 
-  .home-content {
+  /* .home-content {
     margin-top: 2rem;
-  }
+    overflow: hidden;
+  } */
 
   .social-icons {
     margin-top: 2rem;
@@ -1003,6 +1012,11 @@ footer a i {
 
   .home {
     grid-template-columns: 1fr;
+  }
+
+  .home-content {
+    margin-top: 2rem;
+    overflow: hidden;
   }
 
   .home-image {
