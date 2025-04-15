@@ -40,8 +40,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
-  padding-top: 120px;
-  margin: 0;
+  /* padding-top: 110px; */
 }
 
 html {
@@ -154,13 +153,14 @@ section {
   font-weight: 700;
   margin-bottom: 1.5rem;
   margin-top: 0;
-  font-size: 60px;
+  font-size: 3.6rem;
 }
 
 .home-content h2 {
   font-size: var(--big-font);
   font-weight: 700;
   margin-bottom: 0.8rem;
+  font-size: 2.6rem;
 }
 
 .change-text {
@@ -1059,8 +1059,16 @@ footer a i {
     font-size: 80%;
   }
 
+  body {
+    padding-top: 80px;
+  }
+
   .home-content h1 {
-    font-size: 35px;
+    font-size: 2.5rem;
+  }
+
+  .home-content h2 {
+    font-size: 2rem;
   }
 
   footer p {
