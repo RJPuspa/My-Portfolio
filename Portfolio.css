@@ -40,7 +40,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
-  /* padding-top: 110px; */
+  /* margin: 0; */
+  padding-top: 130px;
 }
 
 html {
@@ -142,6 +143,7 @@ section {
   align-items: center;
   grid-gap: 0 4em;
   padding-top: 15px;
+  /* scroll-margin-top: 100px; */
 }
 
 .home-content {
@@ -1060,7 +1062,7 @@ footer a i {
   }
 
   body {
-    padding-top: 80px;
+    padding-top: 90px;
   }
 
   .home-content h1 {
