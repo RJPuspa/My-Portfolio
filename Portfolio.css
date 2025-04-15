@@ -40,18 +40,17 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
-  /* margin: 0; */
-  padding-top: 130px;
+  padding-top: 101px !important;
 }
 
 html {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 101px;
 }
 
 /* Header styles */
@@ -66,7 +65,6 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 20px 10%;
-  /* background-color: #221921; */
 }
 
 header.sticky {
@@ -951,6 +949,7 @@ footer a i {
 /* Break Points */
 
 @media (max-width: 991px) {
+  /* Shared rules for both 991px and 768px */
   header,
   header.sticky {
     padding: 15px 5%;
@@ -961,38 +960,21 @@ footer a i {
   section {
     padding: 50px 5%;
   }
-
   .navList a {
     padding: 8px 15px;
   }
-
-  :root {
-    --big-font: 2.2rem;
-    --normal-font: 1.8rem;
-    --neon-box-shadow: 0 0 0.8rem #12f7ff;
-    --h2-font: 3rem;
+  footer p {
+    font-size: 0.8rem;
   }
 
-  /* .home-content {
-    margin-top: 2rem;
-    overflow: hidden;
-  } */
-
-  .social-icons {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
+  /* 991px-specific rules */
   #menu-icon {
     display: block;
     transition: all 0.4s ease;
   }
-
   #menu-icon.bx-x {
     transform: rotate(-180deg);
   }
-
   .navList {
     display: flex;
     position: absolute;
@@ -1005,92 +987,84 @@ footer a i {
     padding: 0 5%;
     transition: all 0.45s ease;
   }
-
   .navList a {
     display: block;
     padding-bottom: 1rem;
     font-size: 1rem;
   }
-
   .navList.open {
     top: 100%;
   }
-
   .home {
     grid-template-columns: 1fr;
   }
-
   .home-content {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     overflow: hidden;
   }
-
   .home-image {
     margin-bottom: 5rem;
   }
-
   .liquid-shape {
     width: 80%;
     left: 10%;
     top: 13px;
   }
-
   .about {
     flex-direction: column-reverse;
   }
-
   .about > * {
     max-width: 100%;
     min-width: 0;
   }
-
   .skill-main {
     grid-template-columns: 1fr;
   }
-
   .filter-button {
     margin: 2.5rem 0;
   }
-  footer p {
-    font-size: 0.8rem;
-  }
-}
 
-@media (max-width: 768px) {
-  html {
-    font-size: 80%;
-  }
+  /* 768px-specific overrides */
+  @media (max-width: 768px) {
+    html {
+      font-size: 80%;
+    }
+    :root {
+      --big-font: 2.2rem;
+      --normal-font: 1.8rem;
+      --neon-box-shadow: 0 0 0.8rem #12f7ff;
+      --h2-font: 3rem;
+    }
 
-  body {
-    padding-top: 90px;
-  }
-
-  .home-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .home-content h2 {
-    font-size: 2rem;
-  }
-
-  footer p {
-    font-size: 0.6rem;
-  }
-  .filter-buttons .button {
-    font-size: 0.8rem;
-  }
-  .img-about img {
-    max-width: 100%;
-    width: 300px;
-  }
-
-  .info-about1,
-  .info-about2,
-  .info-about3 {
-    display: none;
-  }
-
-  .img-about p {
-    font-size: 1rem;
+    body {
+      padding-top: 80px !important;
+    }
+    .home-content h1 {
+      font-size: 2.5rem;
+    }
+    .home-content h2 {
+      font-size: 2rem;
+    }
+    .social-icons {
+      margin-top: 2rem;
+    }
+    footer p {
+      font-size: 0.6rem;
+    }
+    .filter-buttons .button {
+      font-size: 0.8rem;
+    }
+    .img-about img {
+      max-width: 100%;
+      width: 300px;
+    }
+    .info-about1,
+    .info-about2,
+    .info-about3 {
+      display: none;
+    }
+    .img-about p {
+      font-size: 1rem;
+    }
   }
 }
