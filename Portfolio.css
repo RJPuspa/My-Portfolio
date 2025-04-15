@@ -40,6 +40,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow-x: hidden;
+  padding-top: 120px;
   margin: 0;
 }
 
@@ -141,8 +142,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-gap: 0 4em;
-  padding-top: 0;
-  margin-top: 0;
+  padding-top: 15px;
 }
 
 .home-content {
@@ -1059,9 +1059,9 @@ footer a i {
     font-size: 80%;
   }
 
-  /* body {
-    padding-top: 60px;
-  } */
+  .home-content h1 {
+    font-size: 35px;
+  }
 
   footer p {
     font-size: 0.6rem;

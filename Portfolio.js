@@ -149,25 +149,40 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const navbar = document.querySelector(".navList");
-  const menuIcon = document.getElementById("menu-icon");
+// Testing scrolling issue to solve
 
-  // Function to calculate and apply padding-top
-  function adjustBodyPadding() {
-    const navbarHeight = navbar.getBoundingClientRect().height; // Get the visible height of the navbar
-    document.body.style.paddingTop = `${navbarHeight}px`; // Set padding-top dynamically
-  }
+// document.addEventListener("DOMContentLoaded", () => {
+//   const navbar = document.querySelector(".navList");
+//   const menuIcon = document.getElementById("menu-icon");
 
-  // Initial adjustment
-  adjustBodyPadding();
+//   // Function to calculate and apply padding-top
+//   function adjustBodyPadding() {
+//     const navbarHeight = navbar.getBoundingClientRect().height; // Get the visible height of the navbar
+//     document.body.style.paddingTop = `${navbarHeight}px`; // Set padding-top dynamically
+//   }
 
-  // Optional: Recalculate on window resize
-  window.addEventListener("resize", adjustBodyPadding);
+//   // Initial adjustment
+//   adjustBodyPadding();
 
-  // Handle menu icon click (if needed for responsive design)
-  menuIcon.addEventListener("click", () => {
-    navbar.classList.toggle("active"); // Add or remove a class for toggling menu visibility
-    adjustBodyPadding(); // Recalculate padding if the navbar height changes
-  });
-});
+//   // Optional: Recalculate on window resize
+//   window.addEventListener("resize", adjustBodyPadding);
+
+//   // Handle menu icon click (if needed for responsive design)
+//   menuIcon.addEventListener("click", () => {
+//     navbar.classList.toggle("active"); // Add or remove a class for toggling menu visibility
+//     adjustBodyPadding(); // Recalculate padding if the navbar height changes
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const header = document.querySelector("header");
+
+//   function adjustBodyPadding() {
+//     const headerHeight = header.getBoundingClientRect().height; // Get the visible height of the header
+//     document.body.style.paddingTop = `${headerHeight}px`; // Set padding-top dynamically
+//   }
+
+//   adjustBodyPadding();
+
+//   window.addEventListener("resize", adjustBodyPadding);
+// });
